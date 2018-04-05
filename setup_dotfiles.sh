@@ -4,6 +4,9 @@
 if [ -f "../.bashrc" ];then
 rm -rf ~/.bashrc
 fi
+if [ -f "../.vimrc" ];then
+rm -rf ~/.vimrc
+fi
 if [ ! -d "../.ssh/" ];then
 mkdir ~/.ssh
 fi
@@ -12,5 +15,6 @@ rm -rf ~/.ssh/config
 fi
 
 #set symbolic links
+ln -s ~/dotfiles/.vimrc ~/.vimrc
 ln -s ~/dotfiles/.bashrc ~/.bashrc
 ln -s ~/dotfiles/ssh-config ~/.ssh/config
