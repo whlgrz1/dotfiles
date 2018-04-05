@@ -1,0 +1,11 @@
+### CAEN
+Host caen login.engin.umich.edu
+	HostName login.engin.umich.edu
+	User rockguan
+	ControlMaster auto
+	ControlPath ~/.ssh/_%r@%h:%p
+	ControlPersist 43200
+
+Host gsy
+	HostName oncampus-course.engin.umich.edu
+	User rockguan
